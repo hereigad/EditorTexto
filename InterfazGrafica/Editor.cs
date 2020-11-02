@@ -16,5 +16,15 @@ namespace InterfazGrafica
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            string mensaje = "Desea cerrar el documento?";
+            string caption = "Cerrando";
+            MessageBoxButtons botones = MessageBoxButtons.YesNo;
+            DialogResult cerrar = MessageBox.Show(mensaje, caption, botones);
+            if(cerrar == DialogResult.Yes) {
+                this.Close();
+            }
+        }
     }
 }
