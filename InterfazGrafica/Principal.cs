@@ -23,6 +23,7 @@ namespace InterfazGrafica
             hijo.Text = "Documento " + contadorHijos.ToString();
             hijo.MdiParent = this;
             this.ActivateMdiChild(hijo);
+            this.toolStripStatusLabel2.Text = hijo.Text;
             hijo.Show();
         }
 
@@ -46,5 +47,21 @@ namespace InterfazGrafica
             this.LayoutMdi(MdiLayout.TileVertical);
         }
 
+        private void Principal_MdiChildActivate(object sender, EventArgs e) {
+            if(this.ActiveMdiChild != null) {
+                this.toolStripStatusLabel2.Text = this.ActiveMdiChild.Text;
+            }
+        }
+
+        private void ToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+            ToolStripMenuItem aux = (ToolStripMenuItem)sender;
+            this.toolStripStatusLabel1.Text = aux.Text;
+        }
+
+        private void ToolStripMenuItem_MouseLeave(object sender, EventArgs e)
+        {
+            this.toolStripStatusLabel1.Text = "Ejemplo";
+        }
     }
 }
