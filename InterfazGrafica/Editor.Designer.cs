@@ -81,24 +81,28 @@
             this.guardarToolStripMenuItem,
             this.guardarComoToolStripMenuItem,
             this.cerrarToolStripMenuItem});
+            this.archivoToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // guardarToolStripMenuItem
             // 
+            this.guardarToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
             // 
             // guardarComoToolStripMenuItem
             // 
+            this.guardarComoToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
             this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarComoToolStripMenuItem.Text = "Guardar como";
             // 
             // cerrarToolStripMenuItem
             // 
+            this.cerrarToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
             this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
@@ -110,30 +114,35 @@
             this.cortarToolStripMenuItem,
             this.copiarToolStripMenuItem,
             this.pegarToolStripMenuItem});
+            this.edicionToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.edicionToolStripMenuItem.Name = "edicionToolStripMenuItem";
             this.edicionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.edicionToolStripMenuItem.Text = "Edicion";
             // 
             // deshacerToolStripMenuItem
             // 
+            this.deshacerToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.deshacerToolStripMenuItem.Name = "deshacerToolStripMenuItem";
             this.deshacerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deshacerToolStripMenuItem.Text = "Deshacer";
             // 
             // cortarToolStripMenuItem
             // 
+            this.cortarToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.cortarToolStripMenuItem.Name = "cortarToolStripMenuItem";
             this.cortarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cortarToolStripMenuItem.Text = "Cortar";
             // 
             // copiarToolStripMenuItem
             // 
+            this.copiarToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
             this.copiarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copiarToolStripMenuItem.Text = "Copiar";
             // 
             // pegarToolStripMenuItem
             // 
+            this.pegarToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.pegarToolStripMenuItem.Name = "pegarToolStripMenuItem";
             this.pegarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pegarToolStripMenuItem.Text = "Pegar";
