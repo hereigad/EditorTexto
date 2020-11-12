@@ -40,6 +40,7 @@
             this.cortarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copiarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,6 +93,7 @@
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
+            this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
             // guardarComoToolStripMenuItem
             // 
@@ -99,6 +101,7 @@
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
             this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarComoToolStripMenuItem.Text = "Guardar como";
+            this.guardarComoToolStripMenuItem.Click += new System.EventHandler(this.guardarComoToolStripMenuItem_Click);
             // 
             // cerrarToolStripMenuItem
             // 
@@ -111,6 +114,7 @@
             // 
             this.edicionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deshacerToolStripMenuItem,
+            this.toolStripSeparator1,
             this.cortarToolStripMenuItem,
             this.copiarToolStripMenuItem,
             this.pegarToolStripMenuItem});
@@ -147,6 +151,11 @@
             this.pegarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pegarToolStripMenuItem.Text = "Pegar";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +167,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Editor";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Editor_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -179,5 +189,6 @@
         private System.Windows.Forms.ToolStripMenuItem cortarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copiarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pegarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }

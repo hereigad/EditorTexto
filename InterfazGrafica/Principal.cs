@@ -53,15 +53,28 @@ namespace InterfazGrafica
             }
         }
 
-        private void ToolStripMenuItem_MouseHover(object sender, EventArgs e)
-        {
+        private void ToolStripMenuItem_MouseHover(object sender, EventArgs e) {
             ToolStripMenuItem aux = (ToolStripMenuItem)sender;
             this.toolStripStatusLabel1.Text = aux.Text;
         }
 
-        private void ToolStripMenuItem_MouseLeave(object sender, EventArgs e)
-        {
+        private void ToolStripMenuItem_MouseLeave(object sender, EventArgs e) {
             this.toolStripStatusLabel1.Text = "Ejemplo";
+        }
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e) {
+            OpenFileDialog abrir = new OpenFileDialog();
+            abrir.Title = "Seleccione archivo a abrir";
+            abrir.Filter = "Archivos de texto|*.txt|Todos los archivos|*.*";
+            DialogResult resultado = abrir.ShowDialog();
+            if(resultado == DialogResult.OK) {
+                Editor hijo = new Editor(abrir.FileName, abrir.FileName);
+                contadorHijos++;
+                hijo.MdiParent = this;
+                this.ActivateMdiChild(hijo);
+                this.toolStripStatusLabel2.Text = hijo.Text;
+                hijo.Show();
+            }
         }
     }
 }

@@ -89,6 +89,7 @@
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
+            this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             this.abrirToolStripMenuItem.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
             this.abrirToolStripMenuItem.MouseHover += new System.EventHandler(this.ToolStripMenuItem_MouseHover);
             // 
@@ -126,7 +127,7 @@
             // arrangeIconsToolStripMenuItem
             // 
             this.arrangeIconsToolStripMenuItem.Name = "arrangeIconsToolStripMenuItem";
-            this.arrangeIconsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arrangeIconsToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.arrangeIconsToolStripMenuItem.Text = "Arrange Icons";
             this.arrangeIconsToolStripMenuItem.Click += new System.EventHandler(this.arrangeIconsToolStripMenuItem_Click);
             this.arrangeIconsToolStripMenuItem.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
@@ -135,7 +136,7 @@
             // cascadaToolStripMenuItem
             // 
             this.cascadaToolStripMenuItem.Name = "cascadaToolStripMenuItem";
-            this.cascadaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cascadaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cascadaToolStripMenuItem.Text = "Cascada";
             this.cascadaToolStripMenuItem.Click += new System.EventHandler(this.cascadaToolStripMenuItem_Click);
             this.cascadaToolStripMenuItem.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
@@ -144,7 +145,7 @@
             // horizontalToolStripMenuItem
             // 
             this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
-            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.horizontalToolStripMenuItem.Text = "Horizontal";
             this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
             this.horizontalToolStripMenuItem.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
@@ -153,7 +154,7 @@
             // verticalToolStripMenuItem
             // 
             this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.verticalToolStripMenuItem.Text = "Vertical";
             this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
             this.verticalToolStripMenuItem.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
@@ -162,7 +163,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(144, 6);
             // 
             // verToolStripMenuItem
             // 
@@ -180,7 +181,7 @@
             this.barraDeEstadoToolStripMenuItem.CheckOnClick = true;
             this.barraDeEstadoToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.barraDeEstadoToolStripMenuItem.Name = "barraDeEstadoToolStripMenuItem";
-            this.barraDeEstadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.barraDeEstadoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.barraDeEstadoToolStripMenuItem.Text = "Barra de estado";
             this.barraDeEstadoToolStripMenuItem.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
             this.barraDeEstadoToolStripMenuItem.MouseHover += new System.EventHandler(this.ToolStripMenuItem_MouseHover);
