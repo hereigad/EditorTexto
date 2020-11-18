@@ -59,5 +59,31 @@ namespace InterfazGrafica {
                 }
             }
         }
+
+        private void deshacerToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.richTextBox1.Undo();
+        }
+
+        private void cortarToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.richTextBox1.Cut();
+        }
+
+        private void copiarToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.richTextBox1.Copy();
+        }
+
+        private void pegarToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.richTextBox1.Paste();
+        }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e) {
+            fontDialog1.ShowColor = true;
+            fontDialog1.Font = new Font("Arial", 10);
+
+            if (fontDialog1.ShowDialog() != DialogResult.Cancel) {
+                this.richTextBox1.Font = fontDialog1.Font;
+                this.richTextBox1.ForeColor = fontDialog1.Color;
+            }
+        }
     }
 }
