@@ -76,5 +76,25 @@ namespace InterfazGrafica
                 hijo.Show();
             }
         }
+
+        private void toolStripButton_copiar_Click(object sender, EventArgs e) {
+            RichTextBox child = (RichTextBox) this.ActiveMdiChild.Controls[1];
+            child.Copy();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e) {
+            RichTextBox child = (RichTextBox) this.ActiveMdiChild.Controls[1];
+            child.Cut();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e) {
+            RichTextBox child = (RichTextBox) this.ActiveMdiChild.Controls[1];
+            child.Paste();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e) {
+            RichTextBox child = (RichTextBox) this.ActiveMdiChild.Controls[1];
+            child.Undo();
+        }
     }
 }

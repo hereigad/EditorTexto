@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,8 +47,13 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_copiar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -70,6 +76,8 @@
             this.abrirToolStripMenuItem,
             this.cerrarTodoToolStripMenuItem,
             this.salirToolStripMenuItem});
+            this.archivoToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
+            this.archivoToolStripMenuItem.MergeIndex = 0;
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
@@ -78,6 +86,8 @@
             // 
             // nuevoToolStripMenuItem
             // 
+            this.nuevoToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.Insert;
+            this.nuevoToolStripMenuItem.MergeIndex = 0;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
@@ -87,6 +97,8 @@
             // 
             // abrirToolStripMenuItem
             // 
+            this.abrirToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.Insert;
+            this.abrirToolStripMenuItem.MergeIndex = 1;
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
@@ -96,6 +108,8 @@
             // 
             // cerrarTodoToolStripMenuItem
             // 
+            this.cerrarTodoToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.Insert;
+            this.cerrarTodoToolStripMenuItem.MergeIndex = 5;
             this.cerrarTodoToolStripMenuItem.Name = "cerrarTodoToolStripMenuItem";
             this.cerrarTodoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.cerrarTodoToolStripMenuItem.Text = "Cerrar todo";
@@ -104,6 +118,8 @@
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.Insert;
+            this.salirToolStripMenuItem.MergeIndex = 6;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.salirToolStripMenuItem.Text = "Salir";
@@ -119,6 +135,8 @@
             this.horizontalToolStripMenuItem,
             this.verticalToolStripMenuItem,
             this.toolStripSeparator1});
+            this.ventanaToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.Insert;
+            this.ventanaToolStripMenuItem.MergeIndex = 2;
             this.ventanaToolStripMenuItem.Name = "ventanaToolStripMenuItem";
             this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.ventanaToolStripMenuItem.Text = "Ventana";
@@ -170,6 +188,8 @@
             // 
             this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.barraDeEstadoToolStripMenuItem});
+            this.verToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.Insert;
+            this.verToolStripMenuItem.MergeIndex = 4;
             this.verToolStripMenuItem.Name = "verToolStripMenuItem";
             this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.verToolStripMenuItem.Text = "Ver";
@@ -215,11 +235,56 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton2,
+            this.toolStripButton_copiar,
+            this.toolStripButton1,
+            this.toolStripButton3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(825, 25);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // toolStripButton_copiar
+            // 
+            this.toolStripButton_copiar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_copiar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_copiar.Image")));
+            this.toolStripButton_copiar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_copiar.Name = "toolStripButton_copiar";
+            this.toolStripButton_copiar.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton_copiar.Text = "toolStripButton1";
+            this.toolStripButton_copiar.Click += new System.EventHandler(this.toolStripButton_copiar_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // Principal
             // 
@@ -239,6 +304,8 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,6 +331,10 @@
         private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barraDeEstadoToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton_copiar;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
     }
 }
 
